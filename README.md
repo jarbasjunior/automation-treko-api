@@ -62,11 +62,11 @@ docker run -d --hostname rabbitmq --name rabbitmq -p 15672:15672 -p 5672:5672 -p
 ```
 Verifique se o painel administrativo do RabbitMQ está disponível, acessando no navegador a url http://localhost:15672 com a credencial `guest` para os campos: `Username` e `Password`.
 
-Para mais informações sobre Robo 3T, acesse o [site oficial da ferramenta](https://www.rabbitmq.com).
+Para mais informações sobre RabbitMQ, acesse o [site oficial da ferramenta](https://www.rabbitmq.com).
 
 ## Instalando Pacotes e Dependências do Projeto
 
-No terminal, dentro do diretório do projeto automation-treko-api entre na pasta `api`:
+No terminal, dentro do diretório do projeto **automation-treko-api**, entre na pasta `api`:
 ```
 cd api
 ```
