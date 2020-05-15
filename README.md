@@ -11,7 +11,7 @@ A QA Ninja é uma escola online que conta com um time de Ninjas de altíssimo n�
 
 # Guia de Uso
 
-## Pré-requisitos: [NPM](https://nodejs.org/en/download/package-manager) e [Docker](https://docs.docker.com/engine/install) instalados.
+## Pré-requisitos: [NPM](https://nodejs.org/en/download/package-manager), [Docker](https://docs.docker.com/engine/install) e [MongoDB Community Edition](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials) instalados.
 
 ### MongoDB
 
