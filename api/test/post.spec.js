@@ -27,7 +27,7 @@ describe('post', () => {
     })
   })
 
-  context('when I fo not informr the title', () => {
+  context('when I fo not inform the title', () => {
     let task = { title: '', owner: 'eu@email.com', done: false }
 
     it('must be return 400', (done) => {
@@ -42,7 +42,7 @@ describe('post', () => {
     })
   })
 
-  context('when I fo not informr the owner', () => {
+  context('when I fo not inform the owner', () => {
     let task = { title: 'New task', owner: '', done: false }
 
     it('must be return 400', (done) => {

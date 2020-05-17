@@ -63,7 +63,7 @@ describe('get', () => {
   context('when I find by id', () => {
     it('must return only one task', (done) => {
       let tasks = [
-        { title: 'Read a book about PHP', owner: 'eu@emai.com', done: false }
+        { title: 'Read a book about PHP', owner: 'eu@email.com', done: false }
       ]
 
       tasksModel.insertMany(tasks, (err, result) => {
