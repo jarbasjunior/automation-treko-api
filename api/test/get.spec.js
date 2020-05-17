@@ -18,9 +18,9 @@ describe('get', () => {
 
     before((done) => {
       let tasks = [
-        { title: 'Estudar Nodejs', email: 'eu@test.com', done: false },
-        { title: 'Fazer compras', email: 'eu@test.com', done: false },
-        { title: 'Estudar Rabbitmq', email: 'eu@test.com', done: true }
+        { title: 'Estudar Nodejs', owner: 'eu@test.com', done: false },
+        { title: 'Fazer compras', owner: 'eu@test.com', done: false },
+        { title: 'Estudar Rabbitmq', owner: 'eu@test.com', done: true }
       ]
 
       tasksModel.insertMany(tasks);
@@ -63,7 +63,7 @@ describe('get', () => {
   context('when I find by id', () => {
     it('must return only one task', (done) => {
       let tasks = [
-        { title: 'Read a book about PHP', email: 'eu@emai.com', done: false }
+        { title: 'Read a book about PHP', owner: 'eu@emai.com', done: false }
       ]
 
       tasksModel.insertMany(tasks, (err, result) => {
