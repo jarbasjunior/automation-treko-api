@@ -80,6 +80,11 @@ Instale também a biblioteca [Chai](https://www.chaijs.com), a qual será utiliz
 ```
 npm install chai --save-dev
 ```
+Para gerar relatórios tanto no formato `html`, quanto `json` será utilizada a biblioteca [mochawesome](https://www.npmjs.com/package/mochawesome)
+```
+npm install --save-dev mochawesome
+```
+
 Por fim, instale o plugin [Chai-HTTP](https://www.chaijs.com/plugins/chai-http), o qual será útil para realizar verificações HTTP ou serviços externos:
 ```
 npm install chai-http --save-dev
