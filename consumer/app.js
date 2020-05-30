@@ -3,18 +3,18 @@ const nodemailer = require('nodemailer');
 var amqp = require('amqplib/callback_api');
 
 const transporter = nodemailer.createTransport({
-    host: "smtp.seuhost.com",
+    host: "smtp.zoho.com",
     port: 587,
     secure: false,
     auth: {
-        user: "email",
-        pass: "senha"
+        user: "jarbasoujunior@zohomail.com",
+        pass: "MiJG+5F946vYen+"
     },
     tls: { rejectUnauthorized: false }
 });
 
 
-amqp.connect('amqp://localhost:5672', function (err, conn) {
+amqp.connect('amqp://rabbitmq:5672', function (err, conn) {
     conn.createChannel(function (err, ch) {
         var q = 'tasks';
 
@@ -26,9 +26,9 @@ amqp.connect('amqp://localhost:5672', function (err, conn) {
             var msgJSON = JSON.parse(msg.content.toString());
             console.log(msgJSON)
             const mailOptions = {
-                from: 'fernando@qaninja.io',
+                from: 'jarbasoujunior@zohomail.com',
                 to: msgJSON.email,
-                subject: 'E-mail enviado usando Node!',
+                subject: 'E-mail enviado usando Node e Rabbimq!',
                 html: msgJSON.html
             };
 
