@@ -18,21 +18,18 @@ describe('delete', () => {
     }
 
     before((done) => {
-      tasksModel.insertMany([task]);
-      done();
+      tasksModel.insertMany([task], (error, docs) => {
+        request
+          .delete('/task/' + task._id)
+          .end((err, res) => {
+            expect(res).to.have.status(200);
+            expect(res.body).to.eql({});
+            done();
+          })
+      });
     })
 
-    it('must be return 200', (done) => {
-      request
-        .delete('/task/' + task._id)
-        .end((err, res) => {
-          expect(res).to.have.status(200);
-          expect(res.body).to.eql({});
-          done();
-        })
-    })
-
-    after((done) => {
+    it('must be return 404', (done) => {
       request
         .get('/task/' + task._id)
         .end((err, res) => {

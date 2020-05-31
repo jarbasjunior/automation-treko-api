@@ -6,7 +6,8 @@
   "scripts": {
     "start": "babel-node app.js",
     "dev": "nodemon --exec babel-node app.js",
-    "test": "npm run dropdb_unix & NODE_ENV=dev mocha test/ --reporter mochawesome --require babel-register --exit",
+    "test": "npm run dropdb_unix & NODE_ENV=dev mocha --reporter mochawesome --require babel-register --exit",
+    "test:ci": "npm run dropdb_unix & NODE_ENV=dev mocha test --require babel-register --timeout 10000 --exit",
     "dropdb_win": "scripts\\dropdb.bat",
     "dropdb_unix": "./scripts/dropdb.sh"
   },

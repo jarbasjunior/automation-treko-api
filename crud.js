@@ -16,7 +16,6 @@ export default {
 
         task.save((err, data) => {
             if (!err) {
-                // console.log(msg)
                 let msg = { html: `<h1>Treko:</h1><p>Tarefa ${task.title} criada com sucesso!</p>`, email: task.owner }
                 publishToQueue(defaultQueue, JSON.stringify(msg));
                 return res.status(200).json({ data: data })
