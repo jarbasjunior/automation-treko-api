@@ -85,9 +85,14 @@ Para gerar relatórios tanto no formato `html`, quanto `json` será utilizada a 
 npm install --save-dev mochawesome
 ```
 
-Por fim, instale o plugin [Chai-HTTP](https://www.chaijs.com/plugins/chai-http), o qual será útil para realizar verificações HTTP ou serviços externos:
+Instale o plugin [Chai-HTTP](https://www.chaijs.com/plugins/chai-http), o qual será útil para realizar verificações HTTP ou serviços externos:
 ```
 npm install chai-http --save-dev
+```
+Por fim, isntale o plugin [JUnit Reporter for Mocha
+](https://www.npmjs.com/package/mocha-junit-reporter), o qual irá gerar os relatórios da execução dos testes no formato `.xml` útil para o ambiente de CI:
+```
+npm install mocha-junit-reporter --save-dev
 ```
 ## Configurando ambiente para uso no Jenkins
 
