@@ -25,5 +25,11 @@ pipeline {
         }
       }
     }
+    stage("Production") {
+      steps {
+        input message: "Go to production? (Click 'Proceed' to continue)"
+        sh "echo 'Going up in production'"
+      }
+    }
   }
 }
