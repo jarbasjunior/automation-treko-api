@@ -89,7 +89,7 @@ Instale o plugin [Chai-HTTP](https://www.chaijs.com/plugins/chai-http), o qual s
 ```
 npm install chai-http --save-dev
 ```
-Por fim, isntale o plugin [JUnit Reporter for Mocha
+Por fim, instale o plugin [JUnit Reporter for Mocha
 ](https://www.npmjs.com/package/mocha-junit-reporter), o qual irá gerar os relatórios da execução dos testes no formato `.xml` útil para o ambiente de CI:
 ```
 npm install mocha-junit-reporter --save-dev
@@ -130,7 +130,7 @@ Salve o arquivo `hosts`, feche-o e dê um ping nas rotas: `ping mongo`, `ping ra
 ```
 from localhost (127.0.0.1):
 ```
-Altere os IPS no código da API pelos Alias 
+Altere os IP's no código da API pelos Alias 
 
   - Em `app.js` substitua: `mongoose.connect('mongodb://127.0.0.1/trekodb', { useNewUrlParser: true });` por:
   ```
