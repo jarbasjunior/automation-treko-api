@@ -21,38 +21,39 @@ docker run --name mongo -d -p 27017:27017 mongo
 ```
 Para mais informações sobre mongoDB, acesse o [site oficial da ferramenta](https://www.mongodb.com).
 
-### Robo 3T
+### Studio 3T
 
-Será utilizado o gerenciador de banco de dados **Robo 3T**. A instalação desse exemplo utilizará a versão para a plataforma linux.
+Será utilizado o gerenciador de banco de dados **Studio 3T**. A instalação desse exemplo utilizará a versão para a plataforma linux.
 
 1. Acesse o caminho:
 ```
 cd /usr/local/bin
 ```
-2. Com permissões de super usuário crie e entre na pasta, a qual ficará Robo 3T:
+2. Com permissões de super usuário crie e entre na pasta, a qual ficará Studio 3T:
 ```
 sudo mkdir robomongo && cd robomongo
 ```
-3. Baixe o Robo 3T:
+3. Baixe o Studio 3T:
 ```
-sudo wget https://download-test.robomongo.org/linux/robo3t-1.3.1-linux-x86_64-7419c406.tar.gz
+sudo wget https://download.studio3t.com/studio-3t/linux/2025.5.0/studio-3t-linux-x64.tar.gz
 ```
 4. Descompacte o arquivo:
 ```
-sudo tar -xvzf robo3t-1.3.1-linux-x86_64-7419c406.tar.gz 
+sudo tar -xvzf studio-3t-linux-x64.tar.gz
 ```
-5. Acesse o diretório, cujo executável do Robo 3T se encontra:
+5. Execute o arquivo **studio-3t-linux-x64.sh** para abrir o instalador:
 ```
-cd robo3t-1.3.1-linux-x86_64-7419c406/bin
+./studio-3t-linux-x64.sh
 ```
-6. Execute o arquivo **robo3t**:
-```
-./robo3t
-```
-7. Clique no link `Create` e digite `mongo` no campo `name`;
-8. Clique no botão `Test`, caso tenha sucesso, clique no botão `Save` e em seguida `Connect`.
 
-Para mais informações sobre Robo 3T, acesse o [site oficial da ferramenta](https://robomongo.org).
+6. Após concluir a instalação e fazer login, clique no botão `Add new connection`;
+7. Selecione a opção `Manually configure my connection settings` e clique no botão `Next`;
+8. No campo `name` digite `mongo`;
+9. Clique no botão `Test Connection`, caso tenha sucesso, clique no botão `OK` e em seguida `Save`;
+10. Clique nos botões `Next` > `Next` > `Finished`;
+    
+
+Para mais informações sobre Studio 3T, acesse o [site oficial da ferramenta](https://robomongo.org).
 
 ## RabbitMQ
 
